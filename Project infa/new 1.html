@@ -7,6 +7,16 @@
     <link rel="stylesheet" href="styles.css"> 
 </head>
 <body>
+<script>
+    function promptForName() {
+        let userName = prompt("Введи своє ім'я");
+        while (!userName) {
+            userName = prompt("Введи своє ім'я");
+        }
+        alert(`Вітаю, ${userName}, на моїй сторінці!`);
+    }
+    window.onload = promptForName;
+</script>
     <h1>Мій обраний напрямок професійної підготовки</h1>
 
     <p align="right"><h2>Що робить вчитель</h2>
